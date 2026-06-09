@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon (أيقونة التاب العلوية) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230a1f44'/%3E%3Cpath d='M50,20 C36.2,20 25,31.2 25,45 C25,63.8 50,78 50,78 C50,78 75,63.8 75,45 C75,31.2 63.8,20 50,20 Z' fill='none' stroke='%2300d2c4' stroke-width='6'/%3E%3Cpath d='M44,45 L56,45 M50,39 L50,51' stroke='%2300d2c4' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+    
+    <!-- SEO Meta Tags (قوة البحث المرعبة لـ ترياق جو وياسين صبري العوامي) -->
+    <title>ترياق جو | منصة الرعاية الطبية الفورية المتكاملة (تطوير ياسين صبري العوامي)</title>
+    <meta name="description" content="تطبيق ترياق جو (Tiryaq Go) هو المنصة والوسيط الذكي بين المرضى والأطباء لتتبع الزيارات الطبية على الخريطة مباشرة، صيدليات ذكية لشحن الأدوية، وسوق للأجهزة الطبية. تم تطوير وتصميم الموقع بواسطة المطور ياسين صبري العوامي (Yasseen Sabry Alawamy).">
+    <meta name="keywords" content="ترياق جو, Tiryaq Go, ياسين صبري العوامي, Yasseen Sabry Alawamy, تطوير ياسين صبري العوامي, رعاية طبية منزلية, طبيب منزلي, كشف منزلي, تتبع الطبيب على الخريطة, صيدلية دليفري, أجهزة طبية للبيع, تأجير أجهزة طبية, روشتة ذكية, مصر, الوطن العربي">
+    <meta name="author" content="ياسين صبري العوامي | Yasseen Sabry Alawamy">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (فيسبوك وشبكات التواصل) -->
+    <meta property="og:title" content="ترياق جو | منصة الرعاية الطبية الفورية المتكاملة">
+    <meta property="og:description" content="تتبع طبيبك على الخريطة فوراً، واطلب أدوية وأجهزة طبية بلمسة زر. تصميم وتطوير المطور ياسين صبري العوامي.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.facebook.com/share/17cWunvXN8/?mibextid=wwXIfr">
+    <meta property="og:image" content="https://tiryaqgo.com/logo.png">
+    <meta property="og:site_name" content="ترياق جو | Tiryaq Go">
+    <meta property="og:locale" content="ar_EG">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ترياق جو | منصة الرعاية الطبية الفورية المتكاملة">
+    <meta name="twitter:description" content="منصة الكشف الطبي وتتبع الطبيب وتوصيل الدواء والأجهزة الطبية - تطوير ياسين صبري العوامي.">
+    <meta name="twitter:image" content="https://tiryaqgo.com/logo.png">
+    
+    <!-- Schema.org JSON-LD Structured Data (قوة أرشفة جوجل القصوى) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://tiryaqgo.com/#website",
+          "url": "https://tiryaqgo.com/",
+          "name": "ترياق جو | Tiryaq Go",
+          "description": "منصة الرعاية الطبية الفورية المتكاملة وتوصيل الأدوية والأجهزة الطبية",
+          "publisher": {
+            "@id": "https://tiryaqgo.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://tiryaqgo.com/#webpage",
+          "url": "https://tiryaqgo.com/",
+          "name": "ترياق جو | منصة الرعاية الطبية الفورية المتكاملة",
+          "isPartOf": {
+            "@id": "https://tiryaqgo.com/#website"
+          },
+          "description": "منصة ترياق جو للرعاية الطبية المنزلية وتوصيل الأدوية والأجهزة الطبية، تم تطوير وتصميم الموقع بواسطة المطور ياسين صبري العوامي (Yasseen Sabry Alawamy).",
+          "author": {
+            "@id": "https://tiryaqgo.com/#developer"
+          }
+        },
+        {
+          "@type": "MedicalOrganization",
+          "@id": "https://tiryaqgo.com/#organization",
+          "name": "ترياق جو | Tiryaq Go",
+          "url": "https://tiryaqgo.com/",
+          "sameAs": [
+            "https://www.facebook.com/share/17cWunvXN8/?mibextid=wwXIfr"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://tiryaqgo.com/#developer",
+          "name": "ياسين صبري العوامي",
+          "alternateName": "Yasseen Sabry Alawamy",
+          "jobTitle": "Lead Web Developer",
+          "url": "https://www.facebook.com/share/17cWunvXN8/?mibextid=wwXIfr",
+          "sameAs": [
+            "https://www.facebook.com/share/17cWunvXN8/?mibextid=wwXIfr"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+    <!-- Glowing Background Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="url(#logo-grad)" stroke-width="4" />
+                    <!-- Pin Icon -->
+                    <path d="M50,15 C33.4,15 20,28.4 20,45 C20,67.5 50,85 50,85 C50,85 80,67.5 80,45 C80,28.4 66.6,15 50,15 Z" fill="url(#logo-grad)" opacity="0.15" />
+                    <path d="M50,20 C36.2,20 25,31.2 25,45 C25,63.8 50,78 50,78 C50,78 75,63.8 75,45 C75,31.2 63.8,20 50,20 Z" fill="none" stroke="url(#logo-grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Medical Cross -->
+                    <path d="M44,45 L56,45 M50,39 L50,51" stroke="url(#logo-grad)" stroke-width="5" stroke-linecap="round" />
+                    <!-- Running / Rushing Figure -->
+                    <path d="M35,60 C38,55 45,50 50,53 C55,56 52,65 60,62 C68,59 72,50 72,50" fill="none" class="running-path" stroke="#0a1f44" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="50" cy="32" r="4" class="running-head" fill="#0a1f44" />
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00d2c4" />
+                            <stop offset="100%" stop-color="#00b4a5" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">ترياق جو</span>
+                    <span class="logo-subtitle">Tiryaq Go</span>
+                </div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#home" class="active">الرئيسية</a>
+                <a href="#simulator">المحاكي التفاعلي</a>
+                <a href="#features">مميزاتنا</a>
+                <a href="#testimonials">آراء العملاء</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="تبديل المظهر">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#download" class="btn btn-nav">حمل التطبيق</a>
+                <button class="menu-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer">
+        <div class="drawer-header">
+            <h3>ترياق جو</h3>
+            <button class="close-drawer"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="drawer-links">
+            <a href="#home">الرئيسية</a>
+            <a href="#simulator">المحاكي التفاعلي</a>
+            <a href="#features">مميزاتنا</a>
+            <a href="#testimonials">آراء العملاء</a>
+            <a href="#faq">الأسئلة الشائعة</a>
+            <div class="drawer-actions" style="margin-top:20px; display:flex; flex-direction:column; gap:16px;">
+                <button id="theme-toggle-mobile" class="btn btn-secondary" style="width:100%;">
+                    <i class="fas fa-moon"></i> تبديل المظهر
+                </button>
+                <a href="#download" class="btn btn-primary" style="width:100%;">تحميل التطبيق</a>
+            </div>
+        </div>
+    </div>
+    <div class="drawer-overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Interactive Particle Network Canvas Background -->
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge animate-fade-in">
+                    <span class="badge-icon"><i class="fas fa-bolt animate-pulse"></i></span>
+                    <span class="badge-text">أسرع رعاية طبية منزلية وتوصيل في الوطن العربي</span>
+                </div>
+                <h1 class="animate-up">الرعاية الطبية <br><span class="highlight-text">تصل إليك أينما كنت</span></h1>
+                <p class="hero-desc animate-up delay-1">
+                    ترياق جو هو الحل المتكامل والوسيط الذكي بين المرضى والأطباء. تتبع طبيبك مباشرة على الخريطة، اطلب أجهزتك الطبية من الشركات المعتمدة، واحصل على أدويتك من الصيدلية بأسرع وقت وأعلى أمان.
+                </p>
+                <div class="hero-btns animate-up delay-2">
+                    <a href="#simulator" class="btn btn-primary btn-glow"><i class="fas fa-play"></i> جرب المنصة مجاناً</a>
+                    <a href="#download" class="btn btn-secondary"><i class="fab fa-google-play"></i> تحميل التطبيق</a>
+                </div>
+                <div class="hero-ratings animate-up delay-3">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>موثوق من أكثر من <strong>+50k</strong> مستخدم وطبيب</span>
+                </div>
+            </div>
+            
+            <div class="hero-visual animate-fade-in">
+                <!-- Premium iPhone Mockup with Live Tracker Simulator -->
+                <div class="phone-frame">
+                    <!-- Physical Phone Hardware Buttons -->
+                    <div class="phone-button volume-up"></div>
+                    <div class="phone-button volume-down"></div>
+                    <div class="phone-button power"></div>
+                    
+                    <div class="phone-screen">
+                        <!-- Glass shine overlay -->
+                        <div class="screen-reflection"></div>
+                        
+                        <!-- Top iOS Status Bar -->
+                        <div class="status-bar">
+                            <span class="status-time">12:09</span>
+                            <div class="dynamic-island"></div>
+                            <div class="status-icons">
+                                <i class="fas fa-signal"></i>
+                                <i class="fas fa-wifi"></i>
+                                <i class="fas fa-battery-three-quarters"></i>
+                            </div>
+                        </div>
+
+                        <!-- App UI Header -->
+                        <div class="app-ui-header">
+                            <div class="app-ui-user">
+                                <div class="avatar"><i class="fas fa-user-doctor"></i></div>
+                                <div>
+                                    <div class="name">مرحباً بك</div>
+                                    <div class="status"><span class="pulse-dot"></span> متصل الآن</div>
+                                </div>
+                            </div>
+                            <div class="app-ui-noti"><i class="far fa-bell"></i></div>
+                        </div>
+
+                        <!-- App UI Search Bar -->
+                        <div class="app-ui-search">
+                            <i class="fas fa-search"></i>
+                            <span>ابحث عن طبيب، دواء، جهاز...</span>
+                        </div>
+                        
+                        <!-- App UI Map Banner -->
+                        <div class="app-ui-map-preview">
+                            <div class="map-bg-pattern"></div>
+                            <div class="pulse-ring"></div>
+                            <div class="marker doctor-marker"><i class="fas fa-car-medical animate-pulse"></i></div>
+                            <div class="marker patient-marker"><i class="fas fa-user"></i></div>
+                            <div class="route-line-svg">
+                                <svg width="100%" height="100%" viewBox="0 0 200 150">
+                                    <path d="M40,110 C80,90 110,120 150,50" fill="none" stroke="#00d2c4" stroke-width="3" stroke-dasharray="6,4" />
+                                </svg>
+                            </div>
+                            <div class="map-info-badge">طبيب الطوارئ يقترب</div>
+                        </div>
+
+                        <!-- App UI Services Grid -->
+                        <div class="app-ui-services">
+                            <span class="section-title">الأقسام الرئيسية</span>
+                            <div class="services-mini-grid">
+                                <div class="service-item-mini active">
+                                    <i class="fas fa-user-doctor"></i>
+                                    <span>كشف منزلي</span>
+                                </div>
+                                <div class="service-item-mini">
+                                    <i class="fas fa-prescription-bottle-medical"></i>
+                                    <span>صيدلية</span>
+                                </div>
+                                <div class="service-item-mini">
+                                    <i class="fas fa-kit-medical"></i>
+                                    <span>أجهزة طبية</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- App UI Floating Card -->
+                        <div class="app-ui-status-card">
+                            <div class="doctor-info-compact">
+                                <div class="doc-pic"><i class="fas fa-user-nurse"></i></div>
+                                <div class="doc-details">
+                                    <h4>د. محمد شريف</h4>
+                                    <p>طبيب طوارئ ترياق جو</p>
+                                </div>
+                                <a href="tel:*" class="call-btn-mini"><i class="fas fa-phone"></i></a>
+                            </div>
+                            <div class="progress-bar-mini">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="live-status-indicator">
+                                <i class="fas fa-location-arrow animate-bounce-icon"></i>
+                                <span>يصلك خلال 3 دقائق (800 متر)</span>
+                            </div>
+                        </div>
+
+                        <!-- App Bottom Navigation Bar -->
+                        <div class="app-bottom-nav">
+                            <div class="nav-item active">
+                                <i class="fas fa-house"></i>
+                                <span>الرئيسية</span>
+                            </div>
+                            <div class="nav-item">
+                                <i class="fas fa-receipt"></i>
+                                <span>طلباتي</span>
+                            </div>
+                            <div class="nav-item">
+                                <i class="fas fa-comment-medical"></i>
+                                <span>استشارات</span>
+                            </div>
+                            <div class="nav-item">
+                                <i class="fas fa-user-gear"></i>
+                                <span>حسابي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Simulator Section -->
+    <section id="simulator" class="simulator-section">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">المنصة التفاعلية</span>
+                <h2>عش تجربة "ترياق جو" الحية</h2>
+                <p>اختر البوابة التي تود استكشافها لرؤية مدى سرعة وسهولة التفاعل والطلب</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="simulator-tabs">
+                <button class="tab-btn active" data-tab="doctor-patient">
+                    <span class="tab-icon"><i class="fas fa-map-location-dot"></i></span>
+                    <span class="tab-label">بوابة الطبيب والمريض</span>
+                </button>
+                <button class="tab-btn" data-tab="device-marketplace">
+                    <span class="tab-icon"><i class="fas fa-store"></i></span>
+                    <span class="tab-label">سوق الأجهزة الطبية</span>
+                </button>
+                <button class="tab-btn" data-tab="pharmacy-prescription">
+                    <span class="tab-icon"><i class="fas fa-file-prescription"></i></span>
+                    <span class="tab-label">بوابة الصيدليات والروشتة</span>
+                </button>
+            </div>
+
+            <!-- Simulator Viewport -->
+            <div class="simulator-viewport">
+                
+                <!-- View 1: Doctor Patient Tracking -->
+                <div class="simulator-view active" id="view-doctor-patient">
+                    <div class="view-grid">
+                        <div class="view-visual map-visual">
+                            <div class="live-tag"><span class="pulse-dot"></span> تتبع حي ونشط</div>
+                            <!-- Styled Map Representation -->
+                            <div class="interactive-map" id="map-canvas">
+                                <div class="map-grid-lines"></div>
+                                <div class="road-path"></div>
+                                
+                                <div class="pulse-marker p-marker" style="top: 25%; left: 20%;">
+                                    <div class="pin"><i class="fas fa-home"></i></div>
+                                    <span class="label">المريض (أنت)</span>
+                                </div>
+                                <div class="pulse-marker d-marker moving-doc" style="top: 75%; left: 80%;">
+                                    <div class="pin"><i class="fas fa-car-side"></i></div>
+                                    <span class="label">سيارة الطبيب</span>
+                                </div>
+                                
+                                <svg class="svg-route-connector" width="100%" height="100%">
+                                    <path id="map-track-line" d="M 120 120 L 250 150 L 380 200 L 480 320" fill="none" stroke="rgba(0,180,165,0.4)" stroke-dasharray="8,6" stroke-width="4"></path>
+                                </svg>
+                            </div>
+                            <div class="map-click-indicator">
+                                <i class="fas fa-info-circle"></i>
+                                <span>اضغط على أي مكان في الخريطة لتغيير نقطة انطلاق سيارة الطبيب!</span>
+                            </div>
+                        </div>
+                        
+                        <div class="view-content">
+                            <h3>كيف يتم تتبع الطبيب؟</h3>
+                            <p>بمجرد تأكيد طلبك، سيبحث النظام عن أقرب الأطباء المؤهلين لحالتك. ستتمكن من رؤية مسار حركته على الخريطة لحظة بلحظة ومعرفة تفاصيل اللقاء بدقة متناهية.</p>
+                            
+                            <div class="tracking-stats-card">
+                                <div class="stat-row">
+                                    <span class="label">الطبيب المعالج:</span>
+                                    <strong class="value">د. أحمد رأفت (أخصائي طب طوارئ)</strong>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="label">المسافة المتبقية:</span>
+                                    <strong class="value text-primary" id="track-dist">1.2 كم</strong>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="label">الزمن المقدر للوصول:</span>
+                                    <strong class="value text-primary" id="track-time">5 دقائق</strong>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="label">حالة الطبيب:</span>
+                                    <span class="badge-status" id="tracking-status-badge">في انتظار بدء المحاكاة</span>
+                                </div>
+                            </div>
+
+                            <div class="view-actions">
+                                <button class="btn btn-primary btn-glow" id="start-track-demo">بدء محاكاة الحركة</button>
+                                <button class="btn btn-secondary" onclick="alert('اتصال افتراضي بالطبيب: 010xxxxxxxx')"><i class="fas fa-phone"></i> اتصال بالطبيب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View 2: Device Marketplace -->
+                <div class="simulator-view" id="view-device-marketplace">
+                    <div class="view-grid">
+                        <div class="view-visual devices-visual">
+                            <div class="devices-header">
+                                <h3>الأجهزة المتاحة حالياً</h3>
+                                <button class="btn btn-small" id="open-supplier-modal"><i class="fas fa-plus"></i> عرض جهاز للبيع</button>
+                            </div>
+                            
+                            <!-- Search Bar Filter -->
+                            <div class="search-bar-wrap">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" id="device-search" placeholder="ابحث عن أجهزة (أكسجين، كرسي، ضغط)...">
+                            </div>
+
+                            <div class="devices-grid-mini" id="devices-list">
+                                <!-- Device Card 1 -->
+                                <div class="device-card-mini" data-name="مكثف أكسجين 10 لتر">
+                                    <div class="img-placeholder"><i class="fas fa-pump-medical"></i></div>
+                                    <div class="info">
+                                        <h4>مكثف أكسجين 10 لتر</h4>
+                                        <p class="tag">متوفر للبيع والإيجار</p>
+                                        <div class="price">22,500 ج.م <span class="rent">/ 1,200 ج شهرياً</span></div>
+                                        <button class="btn btn-buy btn-glow">طلب شراء</button>
+                                    </div>
+                                </div>
+                                <!-- Device Card 2 -->
+                                <div class="device-card-mini" data-name="كرسي متحرك خفيف الوزن">
+                                    <div class="img-placeholder"><i class="fas fa-wheelchair"></i></div>
+                                    <div class="info">
+                                        <h4>كرسي متحرك خفيف الوزن</h4>
+                                        <p class="tag">متوفر للبيع فقط</p>
+                                        <div class="price">4,800 ج.م</div>
+                                        <button class="btn btn-buy btn-glow">طلب شراء</button>
+                                    </div>
+                                </div>
+                                <!-- Device Card 3 -->
+                                <div class="device-card-mini" data-name="جهاز قياس الضغط الرقمي">
+                                    <div class="img-placeholder"><i class="fas fa-heart-pulse"></i></div>
+                                    <div class="info">
+                                        <h4>جهاز قياس الضغط الرقمي</h4>
+                                        <p class="tag">توصيل فوري</p>
+                                        <div class="price">850 ج.م</div>
+                                        <button class="btn btn-buy btn-glow">طلب شراء</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view-content">
+                            <h3>سوق الأجهزة الطبية المتكامل</h3>
+                            <p>أول سوق مصري يجمع كبرى شركات المستلزمات الطبية لبيع وتأجير الأجهزة الطبية للمرضى مباشرة مع توفير خيارات التوصيل السريع وضمان الجودة.</p>
+                            
+                            <div class="feature-bullets">
+                                <div class="bullet-item">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <div>
+                                        <strong>ضمان معتمد:</strong> جميع الأجهزة الطبية خاضعة للفحص الفني ومضمونة بنسبة 100%.
+                                    </div>
+                                </div>
+                                <div class="bullet-item">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <div>
+                                        <strong>تأجير مرن:</strong> إمكانية تأجير الأجهزة الطبية اللازمة لفترات مؤقتة مع خيار الاستبدال.
+                                    </div>
+                                </div>
+                                <div class="bullet-item">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <div>
+                                        <strong>حساب للشركات والموردين:</strong> لوحة تحكم متكاملة تتيح لك إدراج أجهزتك للبيع بسهولة.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View 3: Pharmacy Portal -->
+                <div class="simulator-view" id="view-pharmacy-prescription">
+                    <div class="view-grid">
+                        <div class="view-visual pharmacy-visual">
+                            
+                            <!-- Default Drop Upload Area -->
+                            <div class="prescription-upload-box" id="drop-zone">
+                                <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                <h4>اسحب صورة الروشتة الطبية هنا أو اضغط للرفع</h4>
+                                <p>الملفات المدعومة: PNG, JPG, PDF</p>
+                                <input type="file" id="prescription-file" style="display: none;">
+                                <button class="btn btn-primary" id="btn-select-file">اختر ملف</button>
+                                
+                                <!-- Quick Sample Prescription Template Triggers -->
+                                <div class="sample-prescriptions-wrap" onclick="event.stopPropagation();">
+                                    <span class="sample-label">أو جرب كروشتة نموذجية:</span>
+                                    <div class="sample-btns">
+                                        <button class="btn btn-sample" data-prescription="general">روشتة أطفال (أوجمنتين وبانادول)</button>
+                                        <button class="btn btn-sample" data-prescription="cardio">روشتة قلب (كونكور وأسبرين)</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- OCR Matching Progress UI -->
+                            <div class="prescription-scanner" id="scanner-ui" style="display: none;">
+                                <div class="scanner-laser"></div>
+                                <div class="prescription-doc-graphic">
+                                    <i class="fas fa-file-medical"></i>
+                                    <div class="lines"><span></span><span></span><span></span></div>
+                                </div>
+                                <p class="scanner-text">جاري قراءة الروشتة ومطابقة الأدوية مع الصيدليات القريبة...</p>
+                            </div>
+
+                            <!-- Prescription Result -->
+                            <div class="prescription-results" id="results-ui" style="display: none;">
+                                <h4 id="matched-title">الأدوية المطابقة والمتوفرة:</h4>
+                                <ul class="results-list" id="matched-items-list">
+                                    <!-- Dynamic Matchings -->
+                                </ul>
+                                <div class="results-total">
+                                    <span>إجمالي الطلب:</span>
+                                    <strong id="matched-total-val">0 ج.م</strong>
+                                </div>
+                                <div class="result-actions-row" style="display:flex; gap:12px;">
+                                    <button class="btn btn-primary btn-glow btn-block" onclick="alert('تم إرسال الطلب بنجاح للصيدلية الأقرب إليك!')">تأكيد وشحن الأدوية</button>
+                                    <button class="btn btn-secondary" id="btn-reset-pharmacy">إعادة الرفع</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view-content">
+                            <h3>بوابة الصيدليات الذكية</h3>
+                            <p>ارفع روشتتك الطبية أو ابحث عن الأدوية مباشرة، وسيقوم نظام ترياق جو بربطك بأقرب صيدلية تحتوي على أدويتك بالكامل لتوصيلها فوراً.</p>
+                            
+                            <div class="benefit-box">
+                                <div class="benefit-card">
+                                    <i class="fas fa-shield-halved"></i>
+                                    <h4>أدوية أصلية 100%</h4>
+                                    <p>نتعامل فقط مع الصيدليات المرخصة والمعتمدة لضمان سلامتك.</p>
+                                </div>
+                                <div class="benefit-card">
+                                    <i class="fas fa-bolt-lightning"></i>
+                                    <h4>شحن سريع</h4>
+                                    <p>خدمة التوصيل السريع للمنازل لضمان استلام دوائك في الوقت المناسب.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Device Supplier Modal -->
+    <div class="modal-overlay" id="supplier-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>إضافة جهاز طبي جديد للبيع / الإيجار</h3>
+                <button class="close-modal" id="close-supplier-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="add-device-form" class="modal-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="device-name">اسم الجهاز الطبي *</label>
+                    <input type="text" id="device-name" placeholder="مثال: جهاز قياس نسبة الأكسجين بالدم" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="device-type">نوع الإعلان *</label>
+                        <select id="device-type" required>
+                            <option value="sale">بيع فقط</option>
+                            <option value="rent">تأجير فقط</option>
+                            <option value="both">بيع وإيجار</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="device-price">السعر (ج.م) *</label>
+                        <input type="number" id="device-price" placeholder="مثال: 500" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="device-company">اسم الشركة / المورد *</label>
+                    <input type="text" id="device-company" placeholder="مثال: شركة النور للمستلزمات الطبية" required>
+                </div>
+                <div class="form-group">
+                    <label for="device-desc">تفاصيل وحالة الجهاز</label>
+                    <textarea id="device-desc" rows="3" placeholder="اكتب تفاصيل حالة الجهاز الفنية والضمان والملحقات..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-glow">عرض الجهاز الآن</button>
+                    <button type="button" class="btn btn-secondary" id="cancel-device-btn">إلغاء</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Core Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">لماذا تختار ترياق جو؟</span>
+                <h2>حلول طبية متكاملة بلمسة زر</h2>
+                <p>صُممت منصتنا لتوفير أقصى درجات الأمان والسرعة في الرعاية الصحية المنزلية</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card reveal">
+                    <div class="icon-wrap"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>التتبع الجغرافي المباشر</h3>
+                    <p>وداعاً للانتظار وتخمين مواعيد الوصول. شاهد تحرك سيارة الطبيب أو المندوب على الخريطة لحظة بلحظة حتى وصوله لباب بيتك.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card reveal">
+                    <div class="icon-wrap"><i class="fas fa-user-shield"></i></div>
+                    <h3>أطباء وممرضون موثقون</h3>
+                    <p>جميع الكوادر الطبية المسجلة لدينا تخضع لتدقيق صارم في التراخيص الطبية وسنوات الخبرة لضمان رعاية آمنة واحترافية.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card reveal">
+                    <div class="icon-wrap"><i class="fas fa-truck-medical"></i></div>
+                    <h3>توصيل أجهزة وأدوية فوري</h3>
+                    <p>شبكة لوجستية واسعة تربط الصيدليات وشركات الأجهزة الطبية بنظام توصيل سريع يضمن سلامة الشحنات الحساسة.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card reveal">
+                    <div class="icon-wrap"><i class="fas fa-house-chimney-medical"></i></div>
+                    <h3>رعاية صحية شاملة بالمنزل</h3>
+                    <p>من الكشف المنزلي وجلسات العلاج الطبيعي إلى التمريض المنزلي اليومي ورعاية كبار السن، نلبي كافة الاحتياجات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">بساطة الاستخدام</span>
+                <h2>كيف يعمل تطبيق ترياق جو؟</h2>
+                <p>3 خطوات بسيطة تفصلك عن الحصول على أفضل رعاية صحية منزلية</p>
+            </div>
+
+            <div class="steps-flow">
+                <!-- Step 1 -->
+                <div class="step-card reveal">
+                    <div class="step-num">01</div>
+                    <h3>حدد طلبك</h3>
+                    <p>اختر الخدمة الطبية المطلوبة (كشف منزلي، تمريض، طلب دواء، أو شراء/تأجير جهاز طبي).</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-card reveal">
+                    <div class="step-num">02</div>
+                    <h3>تتبع وصول الخدمة</h3>
+                    <p>سيقوم نظامنا بربطك بأقرب مزود خدمة مؤهل، وتستطيع متابعته مباشرة على الخريطة وهو قادم إليك.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-card reveal">
+                    <div class="step-num">03</div>
+                    <h3>احصل على رعايتك</h3>
+                    <p>استقبل الطبيب أو مندوب التوصيل في منزلك، واحصل على الخدمة بأعلى درجات الراحة والمهنية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">آراء شركائنا وعملائنا</span>
+                <h2>ماذا يقولون عن ترياق جو؟</h2>
+                <p>قصص نجاح من المرضى والأطباء والصيدليات الذين وثقوا في خدماتنا</p>
+            </div>
+
+            <div class="testimonials-carousel-wrapper">
+                <div class="testimonials-carousel" id="testimonials-carousel">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card active">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="feedback">"كنت بحاجة ماسة لطبيب باطنة لوالدتي في وقت متأخر من الليل. بفضل ترياق جو تمكنت من طلب طبيب وتتبعه على الخريطة حتى وصل لباب المنزل خلال 20 دقيقة فقط. خدمة مذهلة ووفرت علينا عناء الذهاب للمستشفى."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fas fa-user"></i></div>
+                            <div class="user-details">
+                                <h4>أحمد منصور</h4>
+                                <span>ابن أحد المرضى - القاهرة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="feedback">"منصة ترياق جو ساعدتني كثيراً في تنظيم زياراتي الطبية المنزلية. تتيح لي المنصة معرفة موضع المريض بدقة والوصول إليه بسرعة فائقة مع إدارة كاملة للتقارير الطبية. وسيط ذكي ومحترف للغاية."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fas fa-user-md"></i></div>
+                            <div class="user-details">
+                                <h4>د. خالد عبد الرحمن</h4>
+                                <span>استشاري طب طوارئ - الجيزة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="feedback">"بصفتي صاحب شركة مستلزمات طبية، وفرت لنا ترياق جو سوقاً واسعاً لعرض أجهزة توليد الأكسجين والكراسي المتحركة للبيع أو التأجير للمرضى الذين يحتاجونها بشدة وبنظام لوجستي رائع."</p>
+                        <div class="user-profile">
+                            <div class="user-avatar"><i class="fas fa-store-medical"></i></div>
+                            <div class="user-details">
+                                <h4>أ. مصطفى الشافعي</h4>
+                                <span>مدير شركة الشافي للأجهزة الطبية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Nav -->
+                <div class="carousel-navigation">
+                    <button class="nav-arrow prev" id="carousel-prev"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="nav-arrow next" id="carousel-next"><i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">الأسئلة الشائعة</span>
+                <h2>هل لديك أي استفسار؟</h2>
+                <p>إجابات سريعة على الأسئلة التي تشغل بال عملائنا باستمرار</p>
+            </div>
+
+            <div class="faq-accordion-wrap">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يضمن ترياق جو كفاءة الكادر الطبي؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نحن نخضع جميع الأطباء والممرضين لاختبارات فنية ومراجعة شاملة لشهادات التخرج والخبرة وتراخيص مزاولة المهنة الصادرة عن وزارة الصحة ونقابة الأطباء لضمان الجودة والأمان الكاملين لعملائنا.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يتم احتساب تكلفة الزيارة المنزلية؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يتم احتساب التكلفة بناءً على تخصص الطبيب، والمسافة الجغرافية بين موضع الطبيب وعيادته وموضع المريض، وتظهر التكلفة النهائية شاملة وواضحة للمريض في التطبيق قبل تأكيد الطلب مباشرة دون أي رسوم مخفية.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>هل يمكنني تأجير الأجهزة الطبية عبر المنصة؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، يتيح سوق الأجهزة الطبية إمكانية تأجير الأجهزة (مثل أجهزة الأكسجين والكراسي الطبية والأسرة) لفترات زمنية مرنة (أسبوعية أو شهرية) من شركات معتمدة مع التوصيل والتركيب المنزلي وضمان الصيانة.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف تتم قراءة الروشتة الطبية المرفوعة؟</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نستخدم تقنيات متطورة للتعرف الضوئي على النصوص (OCR) مدعومة بالذكاء الاصطناعي لتحليل خط يد الطبيب ومطابقة الأدوية بقاعدة بيانات الصيدليات المتوفرة وتحديد أقرب صيدلية تمتلك كامل أدوية الروشتة لتوصيلها معاً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container download-container-inner">
+            <div class="download-content-box">
+                <h2>جاهز لبدء تجربتك الطبية الأفضل؟</h2>
+                <p>حمل تطبيق ترياق جو الآن واحصل على الرعاية الطبية الفورية لك ولعائلتك بلمسة واحدة. متوفر مجاناً على جميع الأجهزة الذكية.</p>
+                <div class="app-buttons-group">
+                    <a href="#" class="store-button">
+                        <i class="fab fa-google-play"></i>
+                        <div class="btn-text">
+                            <span>احصل عليه من</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="store-button">
+                        <i class="fab fa-apple"></i>
+                        <div class="btn-text">
+                            <span>متوفر على متجر</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="qr-code-box">
+                <div class="qr-code-graphic">
+                    <svg viewBox="0 0 100 100" class="qr-svg" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10,10 H30 V30 H10 Z M15,15 H25 V25 H15 Z" fill="currentColor" />
+                        <path d="M70,10 H90 V30 H70 Z M75,15 H85 V25 H75 Z" fill="currentColor" />
+                        <path d="M10,70 H30 V90 H10 Z M15,75 H25 V85 H15 Z" fill="currentColor" />
+                        <path d="M40,10 H60 V20 H40 Z M45,25 H55 V35 H45 Z" fill="currentColor" />
+                        <path d="M10,40 H20 V60 H10 Z M25,45 H35 V55 H25 Z" fill="currentColor" />
+                        <path d="M70,40 H80 V50 H70 Z M85,45 H95 V65 H85 Z" fill="currentColor" />
+                        <path d="M40,70 H50 V80 H40 Z M55,75 H65 V85 H55 Z" fill="currentColor" />
+                        <circle cx="50" cy="50" r="6" fill="#00d2c4" />
+                    </svg>
+                </div>
+                <span>امسح الكود بالهاتف للتحميل الفوري</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="container footer-grid">
+            <div class="footer-widget about-widget">
+                <div class="logo">
+                    <h3>ترياق جو</h3>
+                </div>
+                <p>المنصة الطبية الرائدة في تقديم الكشف المنزلي الفوري وتأمين الأدوية والمستلزمات الطبية بأسرع وقت وأعلى جودة في مصر والشرق الأوسط.</p>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/share/17cWunvXN8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget links-widget">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#simulator">المحاكي التفاعلي</a></li>
+                    <li><a href="#features">مميزاتنا</a></li>
+                    <li><a href="#testimonials">آراء العملاء</a></li>
+                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-widget contact-widget">
+                <h4>تواصل معنا</h4>
+                <ul class="contact-details-list">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>الخط الساخن: 19xxx</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>support@tiryaqgo.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>القاهرة، جمهورية مصر العربية</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 ترياق جو. جميع الحقوق محفوظة. | تم التطوير بحب ورعاية بواسطة <span style="color: var(--primary-light); font-weight: 700;">ياسين صبري العوامي (Yasseen Sabry Alawamy)</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
