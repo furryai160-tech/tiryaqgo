@@ -47,6 +47,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -55,6 +57,7 @@ body {
     background-color: var(--bg-light);
     line-height: 1.7;
     overflow-x: hidden;
+    width: 100%;
     position: relative;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -381,17 +384,18 @@ p {
 .mobile-drawer {
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -320px;
     width: 300px;
-    height: 100%;
+    max-width: 85%;
+    height: 100vh;
     background: var(--bg-white);
     z-index: 1002;
-    padding: 30px;
+    padding: 24px;
     box-shadow: -10px 0 30px rgba(0,0,0,0.1);
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .mobile-drawer.active {
@@ -462,10 +466,11 @@ p {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 60px;
     position: relative;
     z-index: 2;
 }
@@ -473,7 +478,8 @@ p {
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    max-width: 800px;
 }
 
 .badge {
@@ -2433,6 +2439,35 @@ p {
         display: block;
     }
     
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-desc {
+        font-size: 1rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+        transform: scale(0.9);
+    }
+    
+    .phone-frame:hover {
+        transform: scale(0.95) translateY(-5px);
+    }
+    
     .steps-flow {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -2441,6 +2476,11 @@ p {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-col {
+        align-items: center;
     }
     
     .app-buttons-group {
